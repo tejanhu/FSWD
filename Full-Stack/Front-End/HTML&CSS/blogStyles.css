@@ -1,18 +1,52 @@
-#main-content {
+#mainContent {
 	border: 20px solid #bdc3c7;
 	margin: auto;
 	width: 50%;
 }
 
-#date {
+.date {
 	color: #3498db;
 	text-transform: uppercase;
 	font-family: source sans pro;
-	
+	letter-spacing: 3px;
+	padding-left: 10px;
+	padding-top: 10px;
 }
 
 h2 {
 
-	#2c3e50
+	color: #2c3e50;
+	font-family: source sans pro;
+	font-size: 30px;
+	/*margin: 0 0 10;*/
+	padding-left: 10px;
 
+}
+
+
+.textContent {
+	font-family: source sans pro;
+	/*margin: 0 0 2;*/
+	padding-left: 10px;
+}
+
+/*.leftBorder {
+	background-color: red;
+	width: 7px;
+	height: 50px;
+	border-left: 2px solid #bdc3c7;
+}*/
+
+.leftBorder {
+	border-left: 2px solid #bdc3c7;
+	padding-left: 10px;
+	
+}
+
+#separator {
+	text-align: center;
+	border: 1px solid #bdc3c7;
+	opacity: 0.2;
+	/*border-width: 0 0 1px 0;*/
+	/*width: 98%; */
 }
