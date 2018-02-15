@@ -4,8 +4,15 @@
 	width: 50%;
 }
 
-date #3498db;
+#date {
+	color: #3498db;
+	text-transform: uppercase;
+	font-family: source sans pro;
+	
+}
 
-h2 #2c3e50
+h2 {
 
-font source sans pro
+	#2c3e50
+
+}
