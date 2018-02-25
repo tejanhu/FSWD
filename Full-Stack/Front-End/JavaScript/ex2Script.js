@@ -5,7 +5,7 @@ if(age < 0){
 	console.log("Error: Negative!");
 }
 
-else if(age == 21){
+else if(age === 21){
 	console.log("happy 21st birthday!!");
 }
 // ODD NUMBER CONDITIONAL TEST 
@@ -14,6 +14,6 @@ else if((age % 2) === 1){
 }
 
 // PERFECT SQUARE NUMBER CONDITIONAL TEST 
-if(age % Math.sqrt(age) == 0){
+if(age % Math.sqrt(age) === 0){
 	console.log("perfect square!");
 }
