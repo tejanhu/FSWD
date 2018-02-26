@@ -3,11 +3,11 @@ console.log("");
 console.log("1. Print all numbers between -10 and -19:");
 var startPt = -10;
 
-while(startPt>=-19){
+while(startPt < 20){
 
 	 console.log(startPt);
 
-	 startPt-=1;
+	 startPt+=1;
 } 
 
 
@@ -17,11 +17,21 @@ console.log("");
 console.log("2. Print all even numbers between 10 and 40:");
 var topEvenNumber = 10;
 
+// while(topEvenNumber<=40){
+
+// 	 console.log(topEvenNumber);
+
+// 	 topEvenNumber+=2;
+// }
+
+// FASTER
 while(topEvenNumber<=40){
 
-	 console.log(topEvenNumber);
+	 if(topEvenNumber % 2 === 0){
+	 	console.log(topEvenNumber);
+	 }
 
-	 topEvenNumber+=2;
+	 topEvenNumber+=1;
 } 
 
 
@@ -32,7 +42,7 @@ var OddNumber = 300;
 
 while(OddNumber <= 333){
 	
-		if(OddNumber % 2 === 1){
+		if(OddNumber % 2 !== 0){
 			console.log(OddNumber);	
 		}
 
