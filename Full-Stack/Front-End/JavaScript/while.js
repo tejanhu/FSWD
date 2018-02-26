@@ -2,9 +2,8 @@
 console.log("");
 console.log("1. Print all numbers between -10 and -19:");
 var startPt = -10;
-var endPt = -19;
 
-while(startPt>=endPt){
+while(startPt>=-19){
 
 	 console.log(startPt);
 
@@ -17,10 +16,8 @@ while(startPt>=endPt){
 console.log("");
 console.log("2. Print all even numbers between 10 and 40:");
 var topEvenNumber = 10;
-var bottomEvenNumber = 40;
 
-
-while(topEvenNumber<=bottomEvenNumber){
+while(topEvenNumber<=40){
 
 	 console.log(topEvenNumber);
 
