@@ -9,11 +9,23 @@ console.log(isEven(333));
 console.log("");
 
 
+// function factorial(n){
+// 	if(n<=1){
+// 		return 1;
+// 	}
+// 	return n*factorial(n-1);
+// }
+
+// UNIQUE SOLUTION:
 function factorial(n){
-	if(n<=1){
-		return 1;
+	//define a result variable
+	var result = 1;
+	//calculate factorial and store value in result
+	for (var i = 2; i <= n; i++) {
+		result = result * i;
 	}
-	return n*factorial(n-1);
+	// return the result variable
+	return result;
 }
 
 console.log(factorial(5));
