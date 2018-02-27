@@ -16,13 +16,25 @@ console.log("");
 // 	return n*factorial(n-1);
 // }
 
-// UNIQUE SOLUTION:
+// UNIQUE SOLUTION(a):
+// function factorial(n){
+// 	//define a result variable
+// 	var result = 1;
+// 	//calculate factorial and store value in result
+// 	for (var i = 2; i <= n; i++) {
+// 		result = result * i;
+// 	}
+// 	// return the result variable
+// 	return result;
+// }
+
+// UNIQUE SOLUTION(b):
 function factorial(n){
 	//define a result variable
 	var result = 1;
 	//calculate factorial and store value in result
-	for (var i = 2; i <= n; i++) {
-		result = result * i;
+	for (var i = n-1; i >= 1; i--) {
+		result *= i;
 	}
 	// return the result variable
 	return result;
