@@ -94,8 +94,7 @@ var movies = [
 ]
 
 
-
-movies.forEach(function(movie){
+function buildStr(movie){
 	var res = "You have ";
 	if(movie.hasWatched){
 		res+="watched ";
@@ -104,6 +103,11 @@ movies.forEach(function(movie){
 	}
 	res+="\""+movie.title+"\" - ";
 	res+= movie.rating +" stars";
-	console.log(res);
-})
+	return res;
+}
+
+movies.forEach(function(movie){
+	console.log(buildStr(movie));
+});
+
 
