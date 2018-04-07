@@ -13,3 +13,9 @@ console.log(p1gEclass[0].innerText);
 // 5) getElementsByTagName
 var p1gEtag = document.getElementsByTagName('p');
 console.log(p1gEtag[0].innerText);
+// 6) Multiple ways
+console.log("Additional methods:")
+console.log(document.querySelectorAll('p')[0].innerText);
+console.log(document.querySelector('h1 + p').innerText);
+
+
