@@ -1,8 +1,6 @@
 var button = document.querySelector('button');
 
-button.addEventListener("click", toggleCtrl);
-
-function toggleCtrl(){
+button.addEventListener("click", function(){
 	var body = document.querySelector('body');
 
 	if(body.style.background === "white"){
@@ -12,10 +10,10 @@ function toggleCtrl(){
 	else{
 
 		body.style.background = "white";
-		
-	}
 
-}
+	}
+});
+
 
 
 
