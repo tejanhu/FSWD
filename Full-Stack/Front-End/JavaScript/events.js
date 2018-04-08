@@ -1,18 +1,18 @@
 var button = document.querySelector('button');
-
+var isPurple = false;
 button.addEventListener("click", function(){
-	var body = document.querySelector('body');
-
-	if(body.style.background === "white"){
-		body.style.background = "purple";
+	
+	if(isPurple){
+		document.querySelector('body').style.background = "white";
+		isPurple = false;
 	}
-
 	else{
-
-		body.style.background = "white";
-
+		document.querySelector('body').style.background = "purple";
+		isPurple = true;
 	}
 });
+
+
 
 
 
