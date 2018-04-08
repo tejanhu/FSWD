@@ -10,13 +10,13 @@ for(var i=0; i<lis.length; i++){
 
 for (var i = 0; i<lis.length; i++) {
 	lis[i].addEventListener("mouseover", function(){
-		this.classList.add("green");
+		this.classList.add("selected");
 	});
 }
 
 for (var i = 0; i<lis.length; i++) {
 	lis[i].addEventListener("mouseout", function(){
-		this.classList.remove("green");
+		this.classList.remove("selected");
 	});
 }
 
