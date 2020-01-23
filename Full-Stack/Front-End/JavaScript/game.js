@@ -10,7 +10,7 @@ if(Number(guess) === secretNumber){
 	alert("YOU GOT IT RIGHT!");
 }
 //otherwise, check if higher
-else if(guess > secretNumber){
+else if(Number(guess) > secretNumber){
 	alert("TOO HIGH. GUESS AGAIN!")
 }
 
