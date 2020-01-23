@@ -10,33 +10,33 @@
 
 	<form>
 		<div>
-			<label for="name">
+			<label for="first">
 				First Name:
 			</label>
-			<input id="name" type="text" placeholder="John" required/>
+			<input id="first" type="text" placeholder="John" required/>
 
 
-			<label for="name">
+			<label for="last">
 				Last Name:
 			</label>
-			<input id="name" type="text" placeholder="Smith" required/>
+			<input id="last" type="text" placeholder="Smith" required/>
 		</div>
 		
 		<div>
-			<label for="radio-choice">
+			<label for="male">
 				Male
 			</label>
-			<input name="radio-choice" type="radio" value="choice-1"/>
+			<input name="gender" type="radio" value="male"/>
 
-			<label for="gender">
+			<label for="female">
 				Female
 			</label>
-			<input name="radio-choice" type="radio" value="choice-2"/>
+			<input name="gender" type="radio" value="female"/>
 
-			<label for="gender">
+			<label for="other">
 				Other
 			</label>
-			<input name="radio-choice" type="radio" value="choice-3"/>
+			<input name="gender" type="radio" value="other"/>
 		</div>
 		
 		<div>
@@ -48,7 +48,7 @@
 			<label for="password">
 				Password:
 			</label>
-			<input pattern=".{5,10}" required title="5 to 10 characters" id="password" type="password" placeholder="your password"/>
+			<input name="password" pattern=".{5,10}" required title="5 to 10 characters" id="password" type="password" placeholder="your password"/>
 			
 		</div>
 

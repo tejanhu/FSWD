@@ -1,0 +1,20 @@
+p {
+
+/*Content - Width and Height*/
+
+/*Changing width of paragraph*/
+/*50% of parent i.e.: body element*/
+width: 50%;
+
+
+/*Border*/
+border: 2px solid red;
+
+/*Padding*/
+padding: 100px;
+/*padding-left: 40px;*/
+
+/*Margin*/
+margin: 100px;
+/*margin-right: 700px;*/
+}

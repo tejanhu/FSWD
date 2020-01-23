@@ -6,7 +6,7 @@ var stringGuess = prompt("GUESS A NUMBER");
 var guess = Number(stringGuess);
 
 //check guess
-if(guess === secretNumber){
+if(Number(guess) === secretNumber){
 	alert("YOU GOT IT RIGHT!");
 }
 //otherwise, check if higher
