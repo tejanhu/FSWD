@@ -14,26 +14,61 @@ app.get("/", function(req, res){
 //SCHEMA SETUP
 
 var campgroundSchema = new mongoose.Schema({
-    name: String,
-    image: String
+    name:        String,
+    image:       String,
+    description: String
 });
 
 var Campground = mongoose.model("Campground", campgroundSchema);
 
 
+    Campground.create(
+        {
+            name: "Granite Hill",
+            image: "https://farm1.staticflickr.com/60/215827008_6489cd30c3.jpg",
+            description: "This is a huge granite hill, no bathrooms. No water. Just a beautiful granite!"
+        }, function(error, campground){
+        if(error){
+            console.log(error);
+        } else{
+            console.log(campground);
+        }
+    } );
+
+
+// INDEX - FETCH ALL CAMPGROUNDS FROM DB
 app.get("/campgrounds", function(req, res){
     // Get all campgrounds from DB
     Campground.find({}, function(error, allCampgrounds){
         if(error){
             console.log(error);
         } else{
-            console.log("SUCCESSFULLY FOUND THE DATA:");
             res.render("campgrounds", {campgrounds:allCampgrounds});
         }
     } )
     // res.render("campgrounds", {campgrounds:campgrounds});
 });
 
+
+// SHOW - FETCH INFO ABOUT ONE CAMPGROUND FROM DB
+app.get("/campgrounds/:id", function(req, res){
+    // Get info about campground from DB with provided ID  
+    // Render show template with that campground
+
+    res.send("This will be the show page one day!");
+
+    // Campground.find({}, function(error, campground){
+    //     if(error){
+    //         console.log(error);
+    //     } else{
+    //         res.render("campgrounds", {campgrounds:allCampgrounds});
+    //     }
+    // } )
+    // res.render("campgrounds", {campgrounds:campgrounds});
+});
+
+
+// CREATE - ADD NEW CAMPGROUNDS TO DB
 app.post("/campgrounds", function(req, res){
     var name = req.body.name;
     var image = req.body.image;
@@ -50,9 +85,12 @@ app.post("/campgrounds", function(req, res){
   
 });
 
+// NEW - SHOW NEW CAMPGROUNDS FORM TO CREATE NEW CAMPGROUND
 app.get("/campgrounds/new", function(req, res){
     res.render("new.ejs");
 });
+
+
 
 
 
