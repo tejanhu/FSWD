@@ -94,7 +94,12 @@ var express         = require("express"),
     });
 
     //DELETE/DESTROY ROUTE
-
+    app.delete("/blogs/:id", function(req, res){
+        //destroy blog or redirect somewhere
+        Blog.findByIdAndRemove(req.params.id, function(error){
+           error ? res.redirect("/blogs"):res.redirect("/blogs");
+        })
+    });
 
 
 
