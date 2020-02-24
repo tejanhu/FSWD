@@ -24,7 +24,7 @@ var express     = require("express"),
     app.get("/", function(req, res){
         res.redirect("/blogs");
     })
-        //INDEX
+    //INDEX ROUTE
     app.get("/blogs", function(req, res){
         Blog.find({}, function(error, blogs){
             if(error){
@@ -39,13 +39,43 @@ var express     = require("express"),
         res.render("index");
     })
 
+    //NEW ROUTE
+    app.get("/blogs/new", function(req, res){
+        res.render("new");
+    });
 
-    //SHOW
+    //CREATE ROUTE
+    app.post("/blogs", function(req, res){
+        //create blog
+        Blog.create(req.body.blog, function(error, newBlog){
+            if(error){
+                res.render("new");
+            } else{
+                 //redirect to the index
+                res.redirect("/blogs");
+            }
+        });
+       
+    });
+    
+    //SHOW ROUTE
+    app.get("/blogs/:id", function(req, res){
+        Blog.findById(req.params.id, function(error, foundBlog){
+            if(error){
+                res.redirect("/blogs");
+            } else{
+                res.render("show", {blog: foundBlog});
+            }
+        })
+    });
+
+    //UPDATE ROUTE
 
 
-    //UPDATE
+    //DELETE/DESTROY ROUTE
 
-    //DELETE/DESTROY
+
+
 
     app.listen(3000, function(){
         console.log("Server running");
