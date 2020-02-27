@@ -21,7 +21,8 @@
                             <th>Name</th>
                             <th>Path</th>
                             <th>HTTP Verb</th>
-                            <th>Purpose</th>  
+                            <th>Purpose</th>
+                            <th>Mongoose Method</th>  
                         </tr>
                     </thead>
                     <tbody>
@@ -30,42 +31,49 @@
                             <td>/blogs</td>
                             <td>GET</td>
                             <td>List all blogs</td>
+                            <td>Blog.find()</td>
                         </tr>
                         <tr class="success">
                             <td>New</td>
                             <td>/blogs/new</td>
                             <td>GET</td>
                             <td>Show new blog form</td>
+                            <td>Non Applicable</td>
                         </tr>
                         <tr class="success">
                             <td>Create</td>
                             <td>/blogs</td>
                             <td>POST</td>
                             <td>Create a new blog, then redirect somewhere</td>
+                            <td>Blog.create()</td>
                         </tr>
                         <tr class="info">
                             <td>Show</td>
                             <td>/blogs/:id</td>
                             <td>GET</td>
-                            <td>Show info about one specific blog</td>  
+                            <td>Show info about one specific blog</td> 
+                            <td> Blog.findById()</td> 
                         </tr>
                         <tr class="warning">
                             <td>Edit</td>
                             <td>/blogs/:id/edit</td>
                             <td>GET</td>
                             <td>Show edit form for one blog</td>
+                            <td> Blog.findById()</td>
                         </tr>
                         <tr class="warning">
                             <td>Update</td>
                             <td>/blogs/:id</td>
                             <td>PUT</td>
                             <td>Update particular blog, then redirect somewhere</td>
+                            <td>Blog.findByIdAndUpdate()</td>
                         </tr>
                         <tr class="danger">
                             <td>Destroy</td>
                             <td>/blogs/:id</td>
                             <td>DELETE</td>
                             <td>Delete a particular blog, then redirect somewhere</td>
+                            <td>Blog.findByIdAndRemove()</td>
                         </tr>
                     </tbody>
                 </table>
