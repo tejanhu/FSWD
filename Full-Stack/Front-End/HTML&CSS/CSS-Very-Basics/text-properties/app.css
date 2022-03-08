@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  font-weight: 100;
+  text-decoration: red line-through wavy 5px;
+  letter-spacing: 15px;
+  font-size: 80px;
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 3;
+}
