@@ -1,0 +1,16 @@
+<%- include('partials/head')%>
+<body>
+    <%- include('partials/navbar')%>
+    <h1>Browsing <%= name %> </h1>
+    <h2> <%= description %> </h2>
+    <p>Total subscribers: <%= subscribers %></p>
+    <hr>
+    <% for(let package of packages){ %>
+        <article>
+            <p> <%= package.offer %> -  <%= package.description %> -  <%= package.price %> -  <%= package.travel %> -  <%= package.sightseeing %> -  <%= package.food %> </p>
+            <% if(package.image){ %>
+                <img src = "<%=  package.image %>" alt = ""/>
+                <% } %>
+        </article>
+    <% } %>
+    <%- include('partials/footer')%>

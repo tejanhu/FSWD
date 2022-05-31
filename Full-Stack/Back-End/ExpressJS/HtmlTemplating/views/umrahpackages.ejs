@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= name %></title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <h1>Browsing <%= name %> </h1>
+    <h2> <%= description %> </h2>
+    <p>Total subscribers: <%= subscribers %></p>
+    <hr>
+    <% for(let package of packages){ %>
+        <article>
+            <p> <%= package.offer %> -  <%= package.description %> -  <%= package.price %> -  <%= package.travel %> -  <%= package.sightseeing %> -  <%= package.food %> </p>
+            <% if(package.image){ %>
+                <img src = "<%=  package.image %>" alt = ""/>
+                <% } %>
+        </article>
+    <% } %>
+
+</body>
+</html>

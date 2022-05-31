@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umrah Packages Index</title>
+</head>
+<body>
+    <h1>Umrah Packages</h1>
+    <ul>
+        <% for(let package of umrahpackages) {%>
+        <li> <%= package.travelAgency %> - <b> <%= package.location %> </b> </li>
+        <% }%>
+    </ul>
+    <a href="/umrahpackages/new">New Umrah Package</a>
+</body>
+</html>

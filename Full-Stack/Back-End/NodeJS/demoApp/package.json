@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "cat-me": "^1.0.3",
+    "colors": "^1.4.0",
+    "give-me-a-joke": "^0.5.1",
     "knock-knock-jokes": "^1.7.0"
   }
 }

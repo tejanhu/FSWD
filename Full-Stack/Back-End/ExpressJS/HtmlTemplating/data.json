@@ -1,0 +1,72 @@
+{
+    "sharif": {  
+    "name":"Sharif Tours Umrah Packages",
+    "subscribers":120000,
+    "description":"Wide range of Umrah packages Sharif Tours have available",
+    "packages":[
+         {
+            "offer": "7 Days Stay at 5 * Hotel",  
+            "description":"Madinat Zayed - Ramadan Umrah",
+              "price":"£2500",
+              "travel":"Private Transfer",
+              "sightseeing": "Sightseeing & tour",
+              "food": "Breakfast, Lunch & Dinner",
+              "image": "https://live.staticflickr.com/8540/8677923375_5d79820374_b.jpg"
+         },
+         {
+            "offer": "7 Days Stay at 5 * Hotel",  
+            "description":"Madinat Zayed - Eastern Umrah",
+              "price":"£2300",
+              "travel":"Private Transfer",
+              "sightseeing": "Sightseeing & tour",
+              "food": "Breakfast, Lunch & Dinner",
+              "image": "https://live.staticflickr.com/8540/8677923375_5d79820374_b.jpg"
+         },
+         {
+            "offer": "7 Days Stay at 5 * Hotel",  
+            "description":"Madinat Zayed - December Umrah",
+              "price":"£2100",
+              "travel":"Private Transfer",
+              "sightseeing": "Sightseeing & tour",
+              "food": "Breakfast, Lunch & Dinner",
+              "image": "https://live.staticflickr.com/8540/8677923375_5d79820374_b.jpg"
+         }
+         ]
+    },
+
+    "ihsaan": {  
+        "name":"Ihsaan Tours Umrah Packages",
+        "subscribers":120000,
+        "description":"Variety of Umrah packages Ihsaan Tours have available",
+        "packages":[
+             {
+                "offer": "7 Days Stay at 5 * Hotel",  
+                "description":"Madinat Zayed - Ramadan Umrah",
+                  "price":"£2500",
+                  "travel":"Private Transfer",
+                  "sightseeing": "Sightseeing & tour",
+                  "food": "Breakfast, Lunch & Dinner",
+                  "image": "https://live.staticflickr.com/8540/8677923375_5d79820374_b.jpg"
+             },
+             {
+                "offer": "7 Days Stay at 5 * Hotel",  
+                "description":"Madinat Zayed - Eastern Umrah",
+                  "price":"£2300",
+                  "travel":"Private Transfer",
+                  "sightseeing": "Sightseeing & tour",
+                  "food": "Breakfast, Lunch & Dinner",
+                  "image": "https://live.staticflickr.com/8540/8677923375_5d79820374_b.jpg"
+             },
+             {
+                "offer": "7 Days Stay at 5 * Hotel",  
+                "description":"Madinat Zayed - December Umrah",
+                  "price":"£2100",
+                  "travel":"Private Transfer",
+                  "sightseeing": "Sightseeing & tour",
+                  "food": "Breakfast, Lunch & Dinner",
+                  "image": "https://live.staticflickr.com/8540/8677923375_5d79820374_b.jpg"
+             }
+             ]
+        }
+        
+}

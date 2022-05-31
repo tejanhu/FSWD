@@ -1,7 +1,21 @@
-var express = require("express");
+const express = require("express");
+const app = express();
 
-var app = express();
 // "/" => "Hi there!"
+
+// app.use((req, res) => {
+//     console.log("WE GOT A NEW REQUEST!")
+//     // console.dir(req)
+//     res.send("As salaam Alaikum!");
+// })
+
+
+// Tell express to listen for requests (start server)
+
+app.listen(3000, function(){
+    console.log("Listening on port 3000");
+});
+
 app.get("/", function(request, response){
     response.send("Hi there!");
 });
@@ -32,11 +46,9 @@ app.get("*", function(request, response){
     response.send("You are a star!");
 });
 
+app.post("/arabic", (req, res) =>{
+res.send({books:"Gateway to Arabic, Al-'Arabiyyatu Bayna Yadayk, Madinah Books, Kitaab Al-Asasi, An-Nahwu Al-Waadih"});
+})
 
 
 
-// Tell express to listen for requests (start server)
-
-app.listen(3000, function(){
-    console.log("Listening on port 3000");
-});
